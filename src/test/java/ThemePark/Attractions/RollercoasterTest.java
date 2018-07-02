@@ -23,7 +23,7 @@ public class RollercoasterTest {
     }
 
     @Test
-    public void canGetPriceForHeightVisitor(){
+    public void canGetPriceForHeight150Visitor(){
         assertEquals(8.40, rollercoaster.priceFor(visitor), 0.001);
     }
 }
