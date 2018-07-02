@@ -1,6 +1,6 @@
 package ThemePark.Stalls;
 
-public class Stall {
+public abstract class Stall {
 
     private String name;
     private String owner;
