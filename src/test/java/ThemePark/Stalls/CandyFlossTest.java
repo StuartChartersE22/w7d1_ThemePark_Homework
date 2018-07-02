@@ -37,4 +37,10 @@ public class CandyFlossTest {
         visitor = new Visitor(12, 150, 200.00);
         assertEquals(2.10, candyFlossStall.priceFor(visitor), 0.001);
     }
+
+    @Test
+    public void canRate(){
+        candyFlossStall.setRating(1);
+        assertEquals(1, candyFlossStall.getRating());
+    }
 }

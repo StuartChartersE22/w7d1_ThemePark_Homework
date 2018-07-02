@@ -18,4 +18,11 @@ public class ParkTest {
     public void canGetName(){
         assertEquals("Chillin' Area", park.getName());
     }
+
+
+    @Test
+    public void canRate(){
+        park.setRating(2);
+        assertEquals(2, park.getRating());
+    }
 }

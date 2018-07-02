@@ -37,4 +37,10 @@ public class TabaccoTest {
     public void allows18Overs(){
         assertTrue(tabaccoStall.isAllowed(visitor));
     }
+
+    @Test
+    public void canRate(){
+        tabaccoStall.setRating(1);
+        assertEquals(1, tabaccoStall.getRating());
+    }
 }

@@ -27,4 +27,11 @@ public class PlaygroundTest {
     public void allowsVisitorsUnder15(){
         assertTrue(playground.isAllowed(visitor));
     }
+
+
+    @Test
+    public void canRate(){
+        playground.setRating(4);
+        assertEquals(4, playground.getRating());
+    }
 }

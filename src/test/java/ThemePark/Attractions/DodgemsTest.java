@@ -26,4 +26,11 @@ public class DodgemsTest {
     public void canGetPriceForAge18Visitor(){
         assertEquals(4.50, dodgems.priceFor(visitor), 0.001);
     }
+
+
+    @Test
+    public void canRate(){
+        dodgems.setRating(8);
+        assertEquals(8, dodgems.getRating());
+    }
 }

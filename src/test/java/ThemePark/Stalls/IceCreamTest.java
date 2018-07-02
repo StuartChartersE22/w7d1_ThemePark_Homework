@@ -37,4 +37,10 @@ public class IceCreamTest {
         visitor = new Visitor(12, 150, 200.00);
         assertEquals(1.40, iceCreamStall.priceFor(visitor), 0.001);
     }
+
+    @Test
+    public void canRate(){
+        iceCreamStall.setRating(6);
+        assertEquals(6, iceCreamStall.getRating());
+    }
 }
