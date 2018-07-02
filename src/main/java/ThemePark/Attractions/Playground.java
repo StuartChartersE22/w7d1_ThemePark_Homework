@@ -1,4 +1,7 @@
 package ThemePark.Attractions;
 
-public class Playground {
+public class Playground extends Attraction {
+    public Playground(String name) {
+        super(name);
+    }
 }
